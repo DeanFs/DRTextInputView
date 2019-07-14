@@ -1,0 +1,16 @@
+PODS:
+  - DRTextInputView (0.1.0)
+
+DEPENDENCIES:
+  - DRTextInputView (from `../`)
+
+EXTERNAL SOURCES:
+  DRTextInputView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DRTextInputView: 8f8c0ec1431f8ac91b5136213fdc479f4474d85d
+
+PODFILE CHECKSUM: b7cfd155c50b0f72c1f09643a707433582799a96
+
+COCOAPODS: 1.7.0.rc.1
