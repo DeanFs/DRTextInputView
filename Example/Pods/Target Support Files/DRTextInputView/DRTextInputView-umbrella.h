@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "DRTextInputView.h"
 
 FOUNDATION_EXPORT double DRTextInputViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char DRTextInputViewVersionString[];
