@@ -153,15 +153,21 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DRInputLimitManager/DRInputLimitManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DRPopAnimationView/DRPopAnimationView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DRTextInputView/DRTextInputView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DRToastView/DRToastView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JXExtension/JXExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDVersion/SDVersion.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DRInputLimitManager/DRInputLimitManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DRPopAnimationView/DRPopAnimationView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DRTextInputView/DRTextInputView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DRToastView/DRToastView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JXExtension/JXExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDVersion/SDVersion.framework"

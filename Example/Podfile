@@ -4,6 +4,8 @@ platform :ios, '9.0'
 
 target 'DRTextInputView_Example' do
   pod 'DRTextInputView', :path => '../'
+  pod 'DRInputLimitManager'
+  pod 'DRToastView'
 
   target 'DRTextInputView_Tests' do
     inherit! :search_paths

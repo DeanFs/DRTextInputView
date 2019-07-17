@@ -1,6 +1,6 @@
 {
   "name": "DRTextInputView",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "一个带输入框的弹窗",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/DeanFs/DRTextInputView",
@@ -13,12 +13,13 @@
   },
   "source": {
     "git": "https://github.com/DeanFs/DRTextInputView.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "DRTextInputView/Classes/**/*",
+  "resources": "DRTextInputView/Classes/*.xib",
+  "source_files": "DRTextInputView/Classes/*.{h,m}",
   "dependencies": {
     "DRMacroDefines": [
 

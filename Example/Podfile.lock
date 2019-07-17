@@ -1,12 +1,33 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - DRInputLimitManager (0.1.1):
+    - BlocksKit
+    - DRMacroDefines
   - DRMacroDefines (0.1.2)
   - DRPopAnimationView (0.1.0):
     - DRMacroDefines
     - JXExtension
     - Masonry
-  - DRTextInputView (0.1.0):
+  - DRTextInputView (0.1.1):
     - DRMacroDefines
     - DRPopAnimationView
+  - DRToastView (0.1.0):
+    - DRMacroDefines
+    - JXExtension
   - JXExtension (0.4.0):
     - JXExtension/Category (= 0.4.0)
     - JXExtension/Transition (= 0.4.0)
@@ -23,12 +44,17 @@ PODS:
   - SDVersion (4.3.2)
 
 DEPENDENCIES:
+  - DRInputLimitManager
   - DRTextInputView (from `../`)
+  - DRToastView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - BlocksKit
+    - DRInputLimitManager
     - DRMacroDefines
     - DRPopAnimationView
+    - DRToastView
     - JXExtension
     - Masonry
     - SDVersion
@@ -38,13 +64,16 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  DRInputLimitManager: e4577af55680188e170dcd722228179610c81a75
   DRMacroDefines: 58aa271bc1c4170fa09f4f33dcad18fc4f21a57e
   DRPopAnimationView: 38b855b928395168b2c9396ead0dfaa89424a8cf
-  DRTextInputView: 99be203708ed023fbd733741f35d898c2cefae7b
+  DRTextInputView: a204bb68b191df2116d0deed43ae94e1eea3ee08
+  DRToastView: f0019801a709f53071c59ba9d33286b1fbdd99e0
   JXExtension: c625f6881ae43cb7bbf97d49c0b2202f8f1de898
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
 
-PODFILE CHECKSUM: 54cd5b63c9c23dcf21f0c9567290777a49c2f6e3
+PODFILE CHECKSUM: ed2213765a09b97b96f78511c74679156d152455
 
 COCOAPODS: 1.6.1
